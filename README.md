@@ -5,8 +5,6 @@ En este punto se analiza la ambigüedad presente en una gramática para estructu
 
 El objetivo es demostrar que la gramática es ambigua tanto de forma teórica como práctica, y posteriormente presentar una solución que elimine dicha ambigüedad.
 
-Gramática original
-
 La gramática propuesta es:
 ``
 prop -> if expr then prop 
@@ -49,7 +47,7 @@ Ejemplo de salida:
 ``
 (start (stmt if A then (stmt if B then (stmt X) else (stmt X))))
 ``
-Análisis 
+## Análisis 
 La cadena evaluada:
 ``
 if A then if B then X else X
