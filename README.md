@@ -36,9 +36,13 @@ if A then if B then X else X
 ``
 ## Ejecución
 ## Generación del parser
+``
 antlr4 -Dlanguage=Python3 Ambiguo.g4
+``
 ## Ejecución
+``
 python3 main.py
+``
 ## Resultado del parser
 
 Ejemplo de salida:
@@ -68,7 +72,7 @@ Interpretación:
 
 if A then (if B then X else X)
 Árbol else asociado al if externo
-``
+
         if A
        /     \
     then     else
@@ -78,7 +82,8 @@ if A then (if B then X else X)
     then
      |
      X
-``
+
+
 Interpretación:
 ``
 (if A then if B then X) else X
